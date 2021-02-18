@@ -5,3 +5,112 @@
   --body: 'Open Sans', sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: no-repeat top/100% url(./images/bg-mobile.svg) , var(--violet);
+}
+
+.wrapper {
+  margin: 8%;
+  display: grid;
+  grid-gap: 40px;
+}
+
+.logo {
+  max-inline-size: 140px;
+}
+
+.hero {
+  margin-block-start: 10px;
+}
+
+.hero img {
+  inline-size: 100%;
+}
+
+.description {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description h1 {
+  font-family: var(--heading);
+  font-size: 2.4rem;
+}
+
+.description p {
+  font-family: var(--body);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  inline-size: 90%;
+}
+
+button {
+  block-size: 40px;
+  inline-size: 180px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--violet);
+  margin-block-start: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .57) ;
+}
+
+button:hover {
+  background-color: var(--soft-magenta);
+  color: white;
+}
+
+.social {
+  text-align: center;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
+  block-size: 30px;
+  justify-content: center;
+  grid-column-gap: 15px;
+}
+
+.social a {
+  align-items: center;
+  color: white;
+  inline-size: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.social i {
+  position: relative;
+  inset-block-start: 4px;
+}
+
+.social a:hover {
+  color: hsl(321,93%,65%);
+  border-color: hsl(321,93%,65%);
+}
+
+footer {
+  color: white;
+  font-family: var(--body);
+  position: absolute;
+  inset-block-end: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: var(--soft-magenta);
+  text-decoration: none;
+}
+
+
